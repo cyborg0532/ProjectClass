@@ -1,0 +1,20 @@
+.page{
+    margin-bottom: 2rem;
+}
+
+
+
+#habit-tracker textarea{
+    padding: 1rem;    ;
+    height: 10rem  ;
+    width: 45rem;
+}
+#habit-tracker{
+    display: flex;
+    gap: 20px;
+}
+#habit-tracker button{
+    padding: 1rem;
+    height: 3rem;
+    width: 10rem;
+}

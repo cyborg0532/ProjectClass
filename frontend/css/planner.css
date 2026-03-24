@@ -1,0 +1,15 @@
+.page{
+    margin-bottom: 2rem;
+}
+
+
+
+#habit-tracker input{
+    padding: 1rem;    ;
+    height: 3rem  ;
+    width: 45rem;
+}
+#habit-tracker{
+    display: flex;
+    gap: 20px;
+}

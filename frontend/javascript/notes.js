@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 li.className = "list-item fade-in"; 
                 li.innerHTML = `
                     <div class="item-left">
+                        <input type="checkbox" ${note.completed ? "checked" : ""} data-index="${index}">
                         <span>${note.text}</span>
                     </div>
                     <button class="danger" data-index="${index}">Delete</button>
@@ -38,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
         notesList.addEventListener("click", (e) => {
             if (e.target.tagName === "BUTTON") {
                 const index = e.target.getAttribute("data-index");
+                if (index === null) return;
+                
                 notes.splice(index, 1);
                 
                 window.saveData('dlm_notes', notes);

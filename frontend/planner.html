@@ -27,11 +27,14 @@
             <p>Organize your day and manage your tasks effectively</p>
         </header>
         <div class="card" id="habit-tracker">
-            <input type="text" placeholder="Enter a new task (e.g., Buy groceries, Call mom, Finish report)">
-             <input type="text" placeholder="Enter a new task (e.g., Buy groceries, Call mom, Finish report)">
-            <button>Add Task</button>
+                <textarea id="planner-input" class="note-box" placeholder="Write your daily plans here..."></textarea>
+            <button id = "add-planner-btn">Add Task</button>
         </div>
+
+         <ul class="item-list" id="planners-list">
+            </ul>
     </main>
+    <script src="javascript/global.js"></script>
     <script src="javascript/planner.js"></script>
 </body>
 </html>

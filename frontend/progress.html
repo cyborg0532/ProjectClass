@@ -9,9 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">
-            Daily Manager
-        </div>
+        <div class="logo">Daily Manager</div>
         <ul class="nav-links">
             <li><a href="index.html">Dashboard</a></li>
             <li><a href="habits.html">Habits</a></li>
@@ -23,11 +21,14 @@
     </nav>
     <main class="container">
         <header class="page fade-in">
-            <h1>Progress</h1>
+            <h1>Progress Tracker</h1>
             <p>Track your progress and achievements</p>
         </header>
-        <div class="card" id="progress-content">
+        <div class="card" id="progress-tracker">
+            <textarea id="progress-input" class="note-box" placeholder="Add a new goal or milestone..."></textarea>
+            <button id="add-progress-btn">Add Progress</button>
         </div>
+        <ul class="item-list" id="progress-list"></ul>
     </main>
     <script src="javascript/global.js"></script>
     <script src="javascript/progress.js"></script>
